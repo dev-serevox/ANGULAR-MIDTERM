@@ -1,0 +1,87 @@
+<div class="container">
+  <br />
+  <h1 class="text-center">Employee List</h1>
+  <br />
+  <label for="filter" class="col-3 col-sm-1 text-left">Filter By</label>
+  <br />
+  <div class="row">
+    <br />
+    <input
+      id="filter"
+      name="filter"
+      [(ngModel)]="searchvalue"
+      (input)="search()"
+      class="form-control col-8 offset-sm-0 col-sm-5"
+      placeholder="Enter employee name to search.."
+    />
+  </div>
+  <br />
+  <label for="count">Total Number of Employees:{{ length }}</label>
+  <br />
+  <table
+    class="table table-hover text-center table-bordered"
+    text-align="center"
+  >
+    <thead class="text-white bg-primary">
+      <th>EMPLOYEE ID</th>
+      <th>NAME</th>
+      <th>LOCATION</th>
+      <th>EMAIL</th>
+      <th>MOBILE</th>
+      <th>DEPT CODE</th>
+      <th>DEPARTMENT</th>
+      <th>SALARY</th>
+      <th>WORK</th>
+      <th>WORK STATUS</th>
+      <th>EDIT</th>
+      <th>DELETE</th>
+    </thead>
+    <tr *ngFor="let u of employees; let indexOfElements = index">
+      <td>
+        <a routerLink="/details/{{ u.id }}">
+          {{ u.id }}
+        </a>
+      </td>
+      <td id="name{{ indexOfElements }}">
+        {{ u.name }}
+      </td>
+      <td id="loc{{ indexOfElements }}">
+        {{ u.location }}
+      </td>
+      <td id="email{{ indexOfElements }}">
+        {{ u.email }}
+      </td>
+      <td id="mob{{ indexOfElements }}">
+        {{ u.mobile }}
+      </td>
+      <td id="mob{{ indexOfElements }}">
+        {{ u.dept_code }}
+      </td>
+      <td id="mob{{ indexOfElements }}">
+        {{ u.dept }}
+      </td>
+      <td id="mob{{ indexOfElements }}">
+        {{ u.salary }}
+      </td>
+      <td id="mob{{ indexOfElements }}">
+      {{ u.work }}
+      </td>
+        <div class="toggle">
+          <input type="checkbox" />
+          <label for="" class="onbtn"></label>
+          <label for="" class="ofbtn"></label>
+        </div>
+      </td>
+      <td>
+        <a routerLink="/editEmployee">
+          <button class="btn btn-info" (click)="editService.setEmployee(u)">
+            Edit
+          </button></a
+        >
+      </td>
+      <td>
+        <button class="btn btn-info" (click)="deleteEmp(u.id)">Delete</button>
+      </td>
+    </tr>
+  </table>
+</div>

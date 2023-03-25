@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <th>DEPARTMENT CODE</th>
+        <th>DEPARTMENT NAME</th>
+        <th>DEPARTMENT SALARY</th>
+        <th>DEPARTMENT WORK</th>
+      </thead>
+      <tr *ngFor="let u of employees; let indexOfElements = index">
+        <td>
+          <a routerLink="/details/{{ u.id }}">
+            {{ u.id }}
+          </a>
+        </td>
+        <td id="name{{ indexOfElements }}">
+          {{ u.name }}
+        </td>
+        <td id="loc{{ indexOfElements }}">
+          {{ u.location }}
+        </td>
+        <td id="email{{ indexOfElements }}">
+          {{ u.email }}
+        </td>
+        <td id="mob{{ indexOfElements }}">
+          {{ u.mobile }}
+        </td>
+        <td>
+          <div class="toggle">
+            <input type="checkbox" />
+            <label for="" class="onbtn"></label>
+            <label for="" class="ofbtn"></label>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

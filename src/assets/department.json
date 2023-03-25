@@ -1,0 +1,45 @@
+{
+  "department": [
+    {
+      "dept_code": 11,
+      "department_name": "Strategy Department",
+      "salary_range": "20,000 - 120,000",
+      "work": "Strategize"
+    },
+    {
+      "dept_code": 22,
+
+      "department_name": "Marketing Department",
+      "salary_range": "30,000 - 130,000",
+      "work": "Sell"
+    },
+    {
+      "dept_code": 33,
+
+      "department_name": "Finance Department",
+      "salary_range": "40,000 - 140,000",
+      "work": "Audit"
+    },
+    {
+      "dept_code": 44,
+
+      "department_name": "Human Resource Department",
+      "salary_range": "25,000 - 50,000",
+      "work": "Hire"
+    },
+    {
+      "dept_code": 55,
+
+      "department_name": "IT Department",
+      "salary_range": "100,000 - 150,000",
+      "work": "Handle IT"
+    },
+    {
+      "dept_code": 66,
+
+      "department_name": "Logistic Department",
+      "salary_range": "70,000 - 90,000",
+      "work": "Logistics"
+    }
+  ]
+}
