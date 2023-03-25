@@ -14,8 +14,6 @@ import { EditEmployeeService } from './edit-employee.service';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { DeptComponent } from './dept/dept.component';
-import { DepartmentService } from './department.service';
 
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent },
@@ -25,7 +23,6 @@ const appRoutes: Routes = [
   { path: 'editEmployee', component: EditEmployeeComponent },
   { path: 'navbar', component: NavbarComponent },
   { path: 'dash', component: DashboardComponent },
-  { path: 'dept', component: DeptComponent },
 ];
 
 @NgModule({
@@ -46,9 +43,8 @@ const appRoutes: Routes = [
     EditEmployeeComponent,
     NavbarComponent,
     DashboardComponent,
-    DeptComponent,
   ],
-  providers: [EmployeeData, EditEmployeeService, DepartmentService],
+  providers: [EmployeeData, EditEmployeeService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
