@@ -7,7 +7,7 @@ import { Employee } from '../employee-data';
 @Component({
   selector: 'detail',
   templateUrl: './details.component.html',
-  styleUrls: ['./details.component.css'],
+  styleUrls: ['./details.component.scss'],
 })
 export class EmployeeComponent {
   @Input() employee: Employee;

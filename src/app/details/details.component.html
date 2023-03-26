@@ -1,93 +1,82 @@
 <div class="container">
-  <div class="list">
-    <h3>Popular Creators</h3>
-    <div class="list-item">
-      <div class="rank"><span>1</span></div>
-      <div class="name">
-        <h2>Employment ID</h2>
+  <h1>Employee Information</h1>
+  <ol class="rectangle-list">
+    <li>
+      <span>
+        <h3>Employment ID</h3>
         <label id="id" name="id" class="font-weight-bold">ID NUMBER:</label
-        >&nbsp;&nbsp;&nbsp;{{ employee.id }}
-      </div>
-    </div>
-    <div class="list-item">
-      <div class="rank"><span>2</span></div>
-      <div class="name">
-        <h2>Full Name</h2>
+        >&nbsp;&nbsp;&nbsp;{{ employee.id }}</span
+      >
+    </li>
+    <li>
+      <span
+        ><h3>Full Name</h3>
         <label id="name" name="name" class="font-weight-bold"
           >EMPLOYEE NAME:</label
-        >&nbsp;&nbsp;&nbsp;{{ employee.name }}
-      </div>
-    </div>
-    <div class="list-item">
-      <div class="rank"><span>3</span></div>
-      <div class="name">
-        <h2>Address</h2>
+        >&nbsp;&nbsp;&nbsp;{{ employee.name }}</span
+      >
+    </li>
+    <li>
+      <span
+        ><h3>Address</h3>
         <label id="location" name="location" class="font-weight-bold"
           >Location:</label
-        >&nbsp;&nbsp;{{ employee.location }}
-      </div>
-    </div>
-    <div class="list-item">
-      <div class="rank"><span>4</span></div>
-      <div class="name">
-        <h2>Email</h2>
+        >&nbsp;&nbsp;{{ employee.location }}</span
+      >
+    </li>
+    <li>
+      <span>
+        <h3>Email</h3>
         <label id="email" name="email" class="font-weight-bold"
           >EMPLOYEE EMAIL:</label
-        >&nbsp;&nbsp;&nbsp;{{ employee.email }}
-      </div>
-    </div>
-    <div class="list-item">
-      <div class="rank"><span>5</span></div>
-      <div class="name">
-        <h2>Mobile</h2>
+        >&nbsp;&nbsp;&nbsp;{{ employee.email }}</span
+      >
+    </li>
+    <li>
+      <span>
+        <h3>Mobile</h3>
         <label id="mobile" name="mobile" class="font-weight-bold">Mobile:</label
-        >&nbsp;&nbsp;{{ employee.mobile }}
-      </div>
-    </div>
-    <div class="list-item">
-      <div class="rank"><span>6</span></div>
-      <div class="name">
-        <h2>Department Code</h2>
+        >&nbsp;&nbsp;{{ employee.mobile }}</span
+      >
+    </li>
+    <li>
+      <span
+        ><h3>Department Code</h3>
         <label
           id="department_code"
           name="department_code"
           class="font-weight-bold"
           >Department Code</label
-        >&nbsp;&nbsp;{{ employee.dept_code }}
-      </div>
-    </div>
-    <div class="list-item">
-      <div class="rank"><span>7</span></div>
-      <div class="name">
-        <h2>Department</h2>
+        >&nbsp;&nbsp;{{ employee.dept_code }}</span
+      >
+    </li>
+    <li>
+      <span>
+        <h3>Department</h3>
         <label id="department" name="department" class="font-weight-bold"
           >Department:</label
-        >&nbsp;&nbsp;{{ employee.dept }}
-      </div>
-    </div>
-    <div class="list-item">
-      <div class="rank"><span>8</span></div>
-      <div class="name">
-        <h2>Salary</h2>
+        >&nbsp;&nbsp;{{ employee.dept }}</span
+      >
+    </li>
+    <li>
+      <span
+        ><h3>Salary</h3>
         <label id="salary" name="salary" class="font-weight-bold">Salary:</label
-        >&nbsp;&nbsp;{{ employee.salary }}
-      </div>
-    </div>
-    <div class="list-item">
-      <div class="rank"><span>9</span></div>
-      <div class="name">
-        <h2>Work Description</h2>
+        >&nbsp;&nbsp;{{ employee.salary }}</span
+      >
+    </li>
+    <li>
+      <span
+        ><h3>Work Description</h3>
         <label id="work" name="work" class="font-weight-bold">Work:</label
-        >&nbsp;&nbsp;{{ employee.work }}p>
-      </div>
-    </div>
-    <br />
+        >&nbsp;&nbsp;{{ employee.work }}p></span
+      >
+    </li>
     <a routerLink="/employees"><button class="btn btn-info">Back</button></a>
+  </ol>
 
-    <div *ngIf="!employee" class="text-center text-danger">
-      Employee not found! Please go back and select employee
-      <br />
-      <a routerLink="/employees"><button class="btn btn-info">Back</button></a>
-    </div>
+  <div *ngIf="!employee" class="text-center text-danger">
+    Employee not found! Please go back and select employee
+    <a routerLink="/employees"><button class="btn btn-info">Back</button></a>
   </div>
 </div>
