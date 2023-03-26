@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Employee } from '../employee-data';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
