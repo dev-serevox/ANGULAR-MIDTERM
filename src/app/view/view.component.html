@@ -3,6 +3,7 @@
   <h1 class="text-center">employee management</h1>
   <br />
   <label for="filter" class="col-3 col-sm-1 text-left"> Filter By</label>
+  <br />
   <div class="row">
     <br />
     <input
@@ -38,7 +39,7 @@
     <tr *ngFor="let u of employees; let indexOfElements = index">
       <td>
         <a routerLink="/details/{{ u.id }}">
-          {{ u.id }}
+          <h6>{{ u.id }}</h6>
         </a>
       </td>
       <td id="name{{ indexOfElements }}">

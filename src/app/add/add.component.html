@@ -39,10 +39,12 @@
           required
         >
           <option value="">Select Location</option>
-          <option value="Pampanga">Pampanga</option>
-          <option value="Tarlac">Tarlac</option>
-          <option value="Manila">Manila</option>
-          <option value="Bulacan">Bulacan</option>
+          <option value="Magalang">Magalang</option>
+          <option value="Arayat">Arayat</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Porac">Porac</option>
+          <option value="Angeles">Angeles</option>
+          <option value="San Fernando">San Fernando</option>
         </select>
         <label
           *ngIf="loc.invalid"
@@ -88,6 +90,102 @@
           *ngIf="mobile.invalid"
           class="alert alert-danger alert-dismissible w-100"
           >Enter 10 digit mobile number</label
+        >
+      </div>
+      <div class="form-group">
+        <label for="dept_code">Department Code</label>
+        <select
+          id="dept_code"
+          class="form-control"
+          name="dept_code"
+          #loc="ngModel"
+          ngModel
+          required
+        >
+          <option value="">Department Code</option>
+          <option value="11">11</option>
+          <option value="22">22</option>
+          <option value="33">33</option>
+          <option value="44">44</option>
+          <option value="55">55</option>
+          <option value="66">66</option>
+        </select>
+        <label
+          *ngIf="loc.invalid"
+          class="alert alert-danger alert-dismissible w-100"
+          >Select employee code</label
+        >
+      </div>
+      <div class="form-group">
+        <label for="department">Department</label>
+        <select
+          id="department"
+          class="form-control"
+          name="dept"
+          #loc="ngModel"
+          ngModel
+          required
+        >
+          <option value="">Department</option>
+          <option value="Finance">Finance</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Logistic">Logistic</option>
+          <option value="Human Resource">Human Resource</option>
+          <option value="Strategy">Strategy</option>
+          <option value="IT">IT</option>
+        </select>
+        <label
+          *ngIf="loc.invalid"
+          class="alert alert-danger alert-dismissible w-100"
+          >Select employee department</label
+        >
+      </div>
+      <div class="form-group">
+        <label for="salary">Salary</label>
+        <select
+          id="salary"
+          class="form-control"
+          name="salary"
+          #loc="ngModel"
+          ngModel
+          required
+        >
+          <option value="">Salary</option>
+          <option value="20,000 - 120,000">20,000 - 120,000</option>
+          <option value="30,000 - 130,000	">30,000 - 130,000</option>
+          <option value="40,000 - 140,000	">40,000 - 140,000</option>
+          <option value="25,000 - 50,000">25,000 - 50,000</option>
+          <option value="100,000 - 150,000">100,000 - 150,000</option>
+          <option value="70,000 - 90,000">70,000 - 90,000</option>
+        </select>
+        <label
+          *ngIf="loc.invalid"
+          class="alert alert-danger alert-dismissible w-100"
+          >Select employee salary</label
+        >
+      </div>
+      <div class="form-group">
+        <label for="work">Work</label>
+        <select
+          id="work"
+          class="form-control"
+          name="work"
+          #loc="ngModel"
+          ngModel
+          required
+        >
+          <option value="">Work</option>
+          <option value="Strategize">Strategize</option>
+          <option value="Sell">Sell</option>
+          <option value="Audit">Audit</option>
+          <option value="Hire">Hire</option>
+          <option value="IT">IT</option>
+          <option value="Logistic">Logistic0</option>
+        </select>
+        <label
+          *ngIf="loc.invalid"
+          class="alert alert-danger alert-dismissible w-100"
+          >Select employee work</label
         >
       </div>
 

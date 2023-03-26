@@ -19,7 +19,7 @@ const appRoutes: Routes = [
   { path: '', component: DashboardComponent },
   { path: 'addEmployee', component: AddEmployeeComponent },
   { path: 'employees', component: ViewEmployeeComponent },
-  { path: 'details', component: EmployeeComponent },
+  { path: 'details/:id', component: EmployeeComponent },
   { path: 'editEmployee', component: EditEmployeeComponent },
   { path: 'navbar', component: NavbarComponent },
   { path: 'dash', component: DashboardComponent },
